@@ -12,3 +12,4 @@ __pycache__/
 # ログファイル
 *.log
 *.sqlite
+app.db 
