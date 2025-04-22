@@ -1,0 +1,102 @@
+/* ========全体のスタイル============= */
+/*
+    body:ページ全体のスタイルを定義します。
+    フォントファミリーをArialとsan-serifに設定し、背景色を#f7f7f7（うすい灰色）に設定しています。
+*/
+body{font-family:Arial,san-serif;background-color:#f7f7f7;}
+
+/*==========エラーのスタイル=================*/
+/*
+    .field-errors:このクラスセレクタはエラーメッセージのスタイルを定義します。
+    色は赤、マージンとバーディングは０に設定されています。
+    バディング：要素の内側のスペース
+    マージン：要素の外側のスペース
+*/
+
+.field-errors{color: red;margin:0;padding:0;}
+
+/*
+    .field-errors li:このクラスセクタはエラーメッセージのリストアイテムのスタイルを定義。リストのスタイルはnoneに設定されている。
+    それにより、リストアイテムのマーカー（通常は順序なしリストでの黒い点や順序付きリストの数字）を非表示にできる
+*/
+
+.field-errors li {list-style-type:none;}
+
+/* ==========ヘッダーのスタイル=============== */
+/*
+    h1:h1見出しのスタイルを定義
+    フォントサイズは2em、テキストは中央揃え、上下のマージンは1emに設定。
+*/
+
+h1 {font-size:2em;text-align:center;margin-top:1em;margin-bottom:1em;}
+
+/*
+    hr::水平線のスタイルを定義
+    上下のマージンは1em、ボーダーなく上部に1pxの#ccc（うすい灰色）のボーダーに設定
+*/
+
+hr {margin-top: 1em;margin-bottom: 1em;border: none;border-top: 1px solid #ccc;}
+
+/*
+    form:フォームのスタイルを定義。
+    表示はフレックスボックス、方向は縦、アイテムは中央ぞろえに設定。
+*/
+
+form{display:flex;flex-direction:colum;align-items:center;}
+
+/*
+    label:ラベルのスタイルを定義
+    表示はブロック、下のマージンは0.5emに設定。
+*/
+
+label{display:block;margin-bottom:0.5em;}
+
+/*
+   input[type=text],input[type=email]:テキスト入力とメール入力のスタイルを定義。
+   ボーダーラディウスはHTML要素の角を丸くするために使用
+*/
+input[type=text],input[type=email]{padding:0.5em;border-radius:4px;border:1px solid #ccc;width:100%;}
+
+/*
+     input[type=submit]:送信ボタンのスタイルを定義。
+     背景色は黄色、文字色は白色、ボーダーはなし、ボーダーラディウスは4px、パディングは0.5emと1em、カーソルはポイント、
+     上のマージンは1em
+*/
+input[type=submit] {background-color:#4CAF50;color:white;border:none;border-radius: 4px;padding:0.5em 1em;
+cursor:pointer;margin-top: 1em;}
+
+/*
+input[type=submit]:hover:送信ボタンにマウスがホバーした時のスタイルの定義。
+背景色が濃い緑色に変わる。
+*/
+input[type=submit]:hover{background-color:#3e8e41;}
+
+/*======出力画面のスタイル================*/
+/*
+div:divの要素スタイルを定義。
+表示はフレックスボックス、方向は縦、アイテムは中央ぞろえに設定。
+*/
+div{display:flex;flex-direction: column;align-items:center;}
+
+/*
+ul:順序なしのリストのスタイルを定義。
+リストスタイルはなし、左パディングは０に設定。
+*/
+ul{list-style:none;padding-left:0;}
+
+/*
+li:リストアイテムのスタイルを定義。
+下のマージンは0.5emに設定。
+*/
+li{margin-bottom: 0.5em;}
+
+/*
+a:リンクのスタイルを定義。色は緑色、テキスト装飾はなしに設定。
+*/
+a {color:#4CAF50;text-decoration:none;}
+
+/*
+a:hover:リンクにマウスがホバーした時のスタイルを定義。
+テキスト装飾が下線に変わる。
+*/
+a:hover{text-decoration: underline;}
