@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>あああ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body id="top">
+    <!--ヘッダー-->
+    <header class="header">
+        <div class="logo">
+            <p>あああ</p>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="/">ホーム</a></li>
+                <li><a href="/math">数学</a></li>
+                <li><a href="/physics">物理</a></li>
+                <li><a href="/chemistry">化学</a></li>
+                <li><a href="/english">英語</a></li>
+                <li><a href="/japanese">現代文</a></li>
+                <li><a href="/contact">お問い合わせ</a></li>
+            </ul>
+            </ul>
+        </nav>
+    </header>
+    <!--ヘッダーここまで-->
+    <h1 class="hero index">あああの勉強法解説サイト</h1>
+    <!--メイン-->
+    <main>
+        <h1>自己紹介</h1>
+        <img src="images/banner.jpg" alt="">
+        <p>こんにちは。あああです。あああって適当過ぎないかって？そうです、いい名前が思いつかなかったのであああにしました。
+            筆者は現在理系大学生なんですが、暇なので主にある程度難しい大学（旧帝や早慶とか？）を目指す理系の大学受験生に向けて勉強法やおすすめ参考書を紹介するサイトを開設しました。別に東大生でもないですし、偏差値２０上げて逆転合格したとかそういうのではないです。しかし、逆にだからこそ再現性があることを言えるんじゃないかと思います。
+        </p>
+
+
+        <div id="news">
+            <h2>お知らせ</h2>
+            <ul>
+                <li>追加記事は随時作成中</li>
+                <li>お問い合わせは<a href="/contact">こちら</a>まで</li>
+            </ul>
+        </div>
+    </main>
+    <!--メインここまで-->
+
+    <!--フッター-->
+    <footer>     
+        <div class="gotop">
+            <div class="gotop">
+                <a href="#top"><img src="{{ url_for('static', filename='images/gotop.svg') }}" alt="ページトップへ戻る"></a>
+            </div>
+        </div>
+        <p class="copyright">&copy; あああ</p>
+    </footer>
+    <!--フッターここまで-->
+
+</body>
+</html>
